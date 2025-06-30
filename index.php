@@ -402,6 +402,7 @@ src="https://www.facebook.com/tr?id=883443177244485&ev=PageView&noscript=1"
 					<span class="username_required" style="display:none"><img src="images/close.svg" alt="gif" />Please enter your insta handle</span>
 						<span class="pleasewaitmsg" style="display:none"><img src="images/fetching.svg" alt="gif" />fetching data</span>
 						<span class="notfoundmgs" style="display:none"><img src="images/close.svg" alt="gif" />  Handle doesn't exist</span>
+						<span class="incorrectusername" style="display:none"><img src="images/close.svg" alt="gif" />  Please enter a valid Instagram handle (e.g. <b>instagram</b>). Do not include <code>@</code> or the link.</span>
 					
                 <div class="privacy-police-page formobile">
                     <a class="HOMEPAGELINKSS" target="_blank" href="https://www.thevibes.buzz/earning-calculator/privacy-policy.php">Privacy Policy</a>
@@ -1906,21 +1907,31 @@ document.addEventListener('DOMContentLoaded', function () {
             $(".username_required").hide();
             $(".notfoundmgs").hide();
             $(".pleasewaitmsg").hide();
+            $(".incorrectusername").hide();
+
+            var insta_user_name = $("#insta_user_name").val().trim();
                 
-            var insta_user_name = $("#insta_user_name").val();
-            if(insta_user_name == ''){
+            if (insta_user_name == '') {
                 $(".username_required").show();
-                $("#submit_insta_user").prop('disabled',false);
-                $("#insta_user_name").prop('disabled',false);
-            }else{
+                $("#submit_insta_user").prop('disabled', false);
+                $("#insta_user_name").prop('disabled', false);
+                return;
+            } else {
+                if (!/^[a-zA-Z0-9._]{1,30}$/.test(insta_user_name)) {
+                    $(".incorrectusername").show();
+                    $("#submit_insta_user").prop('disabled', false);
+                    $("#insta_user_name").prop('disabled', false);
+                    return;
+                }
+                
                 $(".username_required").hide();
                 $(".notfoundmgs").hide();
                 $(".pleasewaitmsg").show();
                 
-                //$("#submit_insta_user").text('checking...');
                 var data = {
     				'store_username':insta_user_name
     			}
+                
     			$.ajax({
     				type:'post',
     				data:data,
