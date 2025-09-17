@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 58">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #ff967b;
+      }
+
+      .cls-3 {
+        fill: #ff4c4c;
+      }
+
+      .cls-4 {
+        fill: #ffdadd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-4" cx="150" cy="27" r="20">
+    <animate accumulate="none" additive="replace" attributeName="r" begin="0s" calcMode="spline" dur="0.26595744680851063s" fill="remove" keySplines="0 0.5 0.5 1" keyTimes="0;1" repeatCount="indefinite" restart="always" values="9;0"/>
+    <animate accumulate="none" additive="replace" attributeName="fill" begin="0s" calcMode="discrete" dur="1.0638297872340425s" fill="remove" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" restart="always" values="#ffdadd;#ff0000;#ff4c4c;#ff967b;#ffdadd"/>
+  </circle>
+  <circle class="cls-4" cx="32" cy="27" r="20">
+    <animate accumulate="none" additive="replace" attributeName="r" begin="0s" calcMode="spline" dur="1.0638297872340425s" fill="remove" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" restart="always" values="0;0;9;9;9"/>
+    <animate accumulate="none" additive="replace" attributeName="cx" begin="0s" calcMode="spline" dur="1.0638297872340425s" fill="remove" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" restart="always" values="16;16;16;50;84"/>
+  </circle>
+  <circle class="cls-2" cx="100" cy="27" r="20">
+    <animate accumulate="none" additive="replace" attributeName="r" begin="-0.26595744680851063s" calcMode="spline" dur="1.0638297872340425s" fill="remove" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" restart="always" values="0;0;9;9;9"/>
+    <animate accumulate="none" additive="replace" attributeName="cx" begin="-0.26595744680851063s" calcMode="spline" dur="1.0638297872340425s" fill="remove" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" restart="always" values="16;16;16;50;84"/>
+  </circle>
+  <circle class="cls-3" cx="168" cy="27" r="20">
+    <animate accumulate="none" additive="replace" attributeName="r" begin="-0.5319148936170213s" calcMode="spline" dur="1.0638297872340425s" fill="remove" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" restart="always" values="0;0;9;9;9"/>
+    <animate accumulate="none" additive="replace" attributeName="cx" begin="-0.5319148936170213s" calcMode="spline" dur="1.0638297872340425s" fill="remove" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" restart="always" values="16;16;16;50;84"/>
+  </circle>
+  <circle class="cls-1" cx="32" cy="27" r="20">
+    <animate accumulate="none" additive="replace" attributeName="r" begin="-0.7978723404255319s" calcMode="spline" dur="1.0638297872340425s" fill="remove" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" restart="always" values="0;0;9;9;9"/>
+    <animate accumulate="none" additive="replace" attributeName="cx" begin="-0.7978723404255319s" calcMode="spline" dur="1.0638297872340425s" fill="remove" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" restart="always" values="16;16;16;50;84"/>
+  </circle>
+</svg>

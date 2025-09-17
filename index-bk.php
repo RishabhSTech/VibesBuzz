@@ -328,7 +328,7 @@ if(isset($_SESSION['verify_phone'])){
 	<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 	<link rel="icon" href="images/favicon.png" sizes="32x32" />
 	<link rel="stylesheet" type="text/css" href="css/reset.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style-new.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
     
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VH5ZWC7RYN"></script>
@@ -402,7 +402,7 @@ src="https://www.facebook.com/tr?id=883443177244485&ev=PageView&noscript=1"
 					<span class="username_required" style="display:none"><img src="images/close.svg" alt="gif" />Please enter your insta handle</span>
 						<span class="pleasewaitmsg" style="display:none"><img src="images/fetching.svg" alt="gif" />fetching data</span>
 						<span class="notfoundmgs" style="display:none"><img src="images/close.svg" alt="gif" />  Handle doesn't exist</span>
-						<span class="incorrectusername" style="display:none"><img src="images/close.svg" alt="gif" />  Please enter a valid Instagram handle (e.g. <b>instagram</b>). Do not include <code>@</code> or the link.</span>
+						<span class="incorrectusername" style="display:none; margin-top:10px;"><img src="images/close.svg" alt="gif" />  Please enter a valid Instagram handle (e.g. <b>instagram</b>). Do not include <code>@</code> or the link.</span>
 					
                 <div class="privacy-police-page formobile">
                     <a class="HOMEPAGELINKSS" target="_blank" href="https://www.thevibes.buzz/earning-calculator/privacy-policy.php">Privacy Policy</a>
@@ -424,7 +424,7 @@ src="https://www.facebook.com/tr?id=883443177244485&ev=PageView&noscript=1"
 				<div class="FooterLine TextPart">an initiative by <span class="HighlightMsg">The Vibes Academy</span>
 				</div>
 				<div class="FooterLine LinePart"><span class="LineDesign"></span></div>
-				<div class="FooterLine TextPart"><span class="MainColor VisitorCount"><span id="hit-count2">62757</span> people</span> visited till
+				<div class="FooterLine TextPart"><span class="MainColor VisitorCount"><span id="hit-count2">26356</span> people</span> visited till
 					now</div>
 			</div>
 		</div>
@@ -446,7 +446,7 @@ src="https://www.facebook.com/tr?id=883443177244485&ev=PageView&noscript=1"
 							<label for="phoneno">Enter your phone number to send one time Password</label>
 							<div class="input-group addtick foriconuse">
 								<input type="text" maxlength="3" value="+91" disabled required />
-								<input type="number" value="<?php echo $verify_phone;?>" maxlength="10" class="phone-input num1 mobilenumberInput" required autocomplete="off"/>
+								<input type="number" value="<?php echo $verify_phone;?>" maxlength="10" class="phone-input num1 mobilenumberInput" required />
 							</div>
 						</div>
 						<div class="form-group OTPgroup otpinputs otpanimation" style="display:none">
@@ -454,10 +454,10 @@ src="https://www.facebook.com/tr?id=883443177244485&ev=PageView&noscript=1"
 								<b class="senton">XXXXXXX99</b> </label>
 								<div class="OTPmainGroup">
 								    <div class="input-group addtick foriconuse">
-							        	<input type="number" maxlength="1" class="otp-input otp1 typeotp" value='' required autocomplete="off"/>
-							        	<input type="number" maxlength="1" class="otp-input otp2 typeotp" value='' required autocomplete="off"/>
-							        	<input type="number" maxlength="1" class="otp-input otp3 typeotp" value='' required autocomplete="off"/>
-							        	<input type="number" maxlength="1" class="otp-input otp4 typeotp" value='' required autocomplete="off"/>
+							        	<input type="number" maxlength="1" class="otp-input otp1 typeotp" value='' required />
+							        	<input type="number" maxlength="1" class="otp-input otp2 typeotp" value='' required />
+							        	<input type="number" maxlength="1" class="otp-input otp3 typeotp" value='' required />
+							        	<input type="number" maxlength="1" class="otp-input otp4 typeotp" value='' required />
 						        	</div>
 						        	
 						        	<!--a href="javascript:;" id="myLink" class="ResendOTP" disabled>Resend OTP <span id="timer">15</span>s</a-->
@@ -486,7 +486,7 @@ src="https://www.facebook.com/tr?id=883443177244485&ev=PageView&noscript=1"
 				<div class="FooterLine TextPart">an initiative by <span class="HighlightMsg">The Vibes Academy</span>
 				</div>
 				<div class="FooterLine LinePart"><span class="LineDesign"></span></div>
-				<div class="FooterLine TextPart"><span class="MainColor VisitorCount"><span id="hit-count">62757</span> people</span> visited till
+				<div class="FooterLine TextPart"><span class="MainColor VisitorCount"><span id="hit-count">26356</span> people</span> visited till
 					now</div>
 			</div>
 		</div>
@@ -504,7 +504,7 @@ src="https://www.facebook.com/tr?id=883443177244485&ev=PageView&noscript=1"
 			</div>
 			<div class="RowRatio BcRatio ">
 				<div class="r-col-1 r-col">
-					<div class="RatioHeading">Did you know, <span>your last <b class="ReelsCount"><?php echo $data['ReelsCount'];?></b> Reels have received</span> </div>
+					<div class="RatioHeading">Did you know, <span>your last <b class="ReelsCount"><?php echo $data['ReelsCount'];?></b> Reels have</span> </div>
 
 					<div class="ViewCount">
 						<div class="InnerCount">
@@ -755,7 +755,8 @@ src="https://www.facebook.com/tr?id=883443177244485&ev=PageView&noscript=1"
 			</div>
 			<div class="RowRatio RowRatio2">
 				<div class="r-col-1 r-col">
-					<div class="RatioHeading w80 StepHeading">You are almost there!</div>
+					<div class="RatioHeading w80 StepHeading">You are almost there! Here is your last step to see how
+						much you can earn</div>
 
 					<div class="row">
 						<div class="col col-1">
@@ -777,23 +778,7 @@ src="https://www.facebook.com/tr?id=883443177244485&ev=PageView&noscript=1"
 										
 										</div>    
 								</div>
-                                
-                                <div class="form-group form-group2">
-                                    <label class="labelforGender">What is your gender?</label>
-                                    <ul class="chips your_gender" style="margin-bottom: 0px;">
-                                        <li class="">Male</li>
-                                        <li class="">Female</li>
-                                        <li class="">Non-binary</li>
-                                    </ul>
-                                </div>
-
-                                <div class="form-group form-group2">
-								    <label class="labelforAge" for="age">What is your Age? </label>
-										<div class="input-group addtick foriconuse">
-											<input type="number" maxlength="2" class=" your_age" required="">
-										</div>    
-								</div>
-                                
+								
 								<div class="form-group form-group2">
 								    <label for="samemobile">Whatsapp Number  <input type="checkbox" id="samemobile"><span class="phonecopy">Same as Phone No</span></label>
 										<div class="input-group addtick foriconuse">
@@ -937,43 +922,6 @@ src="https://www.facebook.com/tr?id=883443177244485&ev=PageView&noscript=1"
 		</div>
 	</section>
 
-    <section class="Step12" style="display:none">
-		<div class="container">
-			<div class="LogoTopnav">
-				<a href="index.php" class="LogoClick">
-					<img src="images/logo.png" alt="Vibes Buzz" class="Logo" />
-				</a>
-			</div>
-			<div class="row">
-				<div class="col col-1">
-                <div class="MainHeading MainColor">Uh oh! Not there yet....</div>
-                <div class="col col-1" style="width: 80%;">
-                    <div class="SubHeading">You need atleast 5000 followers for brand collabs! </div>
-
-                    <div class="RatioHeading bold StepHeading">Want to become an influencer and gain genuine followers?</div>
-                    
-                    <div class="BtnGroup">
-                        <a href="https://www.thevibes.academy/" class="Btn"> Learn More </a>
-                    </div>
-                </div>
-                    
-				</div>
-				<div class="col col-2">
-					<div class="ImagePreview">
-						<img src="images/step12.png" alt="Step 12" class="Step 12 Image" />
-					</div>
-				</div>
-			</div>
-			<div class="FooterMsgFiestPage">
-				<div class="FooterLine TextPart">an initiative by <span class="HighlightMsg">The Vibes Academy</span>
-				</div>
-				<div class="FooterLine LinePart"><span class="LineDesign"></span></div>
-				<div class="FooterLine TextPart"><span class="MainColor VisitorCount"><span id="hit-count2">62757</span> people</span> visited till
-					now</div>
-			</div>
-		</div>
-	</section>
-
 
 <div class="modal sessionModal" id="sessionModal">
   <div class="modal-dialog">
@@ -1098,7 +1046,20 @@ document.addEventListener('DOMContentLoaded', function () {
 				}
 			});
 			
+			/*
+            var currentUrl = window.location.href;
+            var newParams = '?sessionclear=1'; 
+            
+            if (currentUrl.indexOf('?') > -1) {
+                currentUrl += '&' + newParams.substring(1);
+            } else {
+                currentUrl += newParams;
+            }
+            
+            window.location.href = currentUrl*/
         });
+        //var $sendOtpButton = $('.sendotp');
+        //var $phoneNumberInput = $('.num1');
         
         
         $('.addtick').removeClass('foriconuse');
@@ -1536,20 +1497,9 @@ document.addEventListener('DOMContentLoaded', function () {
 					$('.last_post_date').text(res.last_post_date);
 					
 					$('.Step11').hide();
-
-                    if(res.follower < 5000){
-                        $.ajax({
-                            type:'post',
-                            data:{ 'clearsession': 'clearsession' },
-                            url:'request-action.php',
-                            success:function(res){
-                                $('.Step12').show();
-                            }
-                        });
-                    } else {
-                        $('.Step3').show();
-                        totalViewCounter();
-                    }
+                    $('.Step3').show();
+                    
+                    totalViewCounter();
                     
 				}
 			});
@@ -1773,26 +1723,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         }); 
-
-        $('.your_gender li').click(function(){
-            if ($(this).hasClass('selected')) {
-                $(this).removeClass('selected');
-            } else {
-                $('.your_gender li').removeClass('selected');
-                $(this).addClass('selected');
-            }
-        });
-
-        $('.your_age').on('input', function() {
-            var inputLength = $(this).val().length;
-            var ageValue = parseInt($(this).val());
-            
-            if (inputLength > 0 && ageValue >= 13 && ageValue <= 99) {
-                $(this).closest('.addtick').addClass('foriconuse');
-            } else {
-                $(this).closest('.addtick').removeClass('foriconuse');
-            }
-        });
         
         $('.saveAboutcontent').click(function(){
             
@@ -1850,6 +1780,13 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             
             var pin1 = $('.pin1').val();
+            /*var pin2 = $('.pin2').val();
+            var pin3 = $('.pin3').val();
+            var pin4 = $('.pin4').val();
+            var pin5 = $('.pin5').val();
+            var pin6 = $('.pin6').val();
+            
+            var pincode = pin1 + pin2 + pin3 + pin4 + pin5 + pin6;*/
             
             if(pin1 == ''){
                 alert('please enter pincode.');
@@ -1860,26 +1797,6 @@ document.addEventListener('DOMContentLoaded', function () {
             if(whatsapp_num == ''){
                 alert('please enter WhatsApp number.');
                 return;
-            }
-
-            var selectedGender = '';
-            var ageValue = '';
-            
-            if($('.your_gender').length > 0){
-                selectedGender = $('.your_gender .selected').text().trim();
-                if(selectedGender == ''){
-                    alert('Please select your gender.');
-                    return;
-                }
-            }
-        
-            if($('.your_age').length > 0){
-                
-                ageValue = $('.your_age').val();
-                if(ageValue == ''){
-                    alert('Please enter your age.');
-                    return;
-                }
             }
             
             var totalviews = $('.totalviews').text();
@@ -1924,15 +1841,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 'totallikes2': totallikes2,
                 'totalcomment': totalcomment,
             };
-
-            if(selectedGender && selectedGender !== ''){
-                data['cap_gender'] = selectedGender;
-            }
-
-            if(ageValue && ageValue !== ''){
-                data['cap_age'] = ageValue;
-            }
-
 			$.ajax({
 				type:'post',
 				data:data,
@@ -1943,6 +1851,15 @@ document.addEventListener('DOMContentLoaded', function () {
 				        alert('Please enter correct pincode!');
 				    }else{
 				        window.location.href = "report-card.php";
+				        /*
+				        $('.Step8').hide();
+					
+    					$('body').removeClass('background');
+                        $('body').removeClass('background3');
+                        $('body').addClass('background2');
+                        
+    					$('.Step9').show();
+    					*/
 				    }
 					
 				}
